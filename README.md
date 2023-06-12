@@ -1,18 +1,17 @@
-# Vue 3 + TypeScript + Vite
+# 專案結構
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+![image](https://github.com/mockingbird48763/simple-memo/assets/96987022/19b91c4d-f49b-4bc1-a40e-914026bc9f2b)
 
-## Recommended IDE Setup
+store\ActionHelper.ts --- 負責所有資料和業務方法
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+store\DataHelper.ts --- 對 localStorage 進行操作
 
-## Type Support For `.vue` Imports in TS
+store\index.ts(pinia) --- 共享狀態
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+model\ItemData.ts --- 資料模型，用於描述單個筆記的資料
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
+model\CateEnums.ts --- 資料模型，枚舉類，用於描述筆記所屬的類型
 
-1. Disable the built-in TypeScript Extension
-   1. Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-   2. Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+# 專案截圖
+
+![image](https://github.com/mockingbird48763/simple-memo/assets/96987022/cc5c70cf-06cf-454a-8b49-f2328247a9b7)
